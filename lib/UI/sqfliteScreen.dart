@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import '../helper/Databasehelper.dart';
-
 
 class sqfLiteScreen extends StatefulWidget {
   const sqfLiteScreen({Key? key}) : super(key: key);

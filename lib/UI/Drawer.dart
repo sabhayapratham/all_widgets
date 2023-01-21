@@ -1,5 +1,5 @@
-import 'package:all_widgets/utils/AppString.dart';
 import 'package:all_widgets/utils/FirstScreen.dart';
+import 'package:all_widgets/utils/appString2.dart';
 import 'package:flutter/material.dart';
 
 class Drawer1 extends StatefulWidget {
@@ -55,7 +55,7 @@ class _DrawerState extends State<Drawer1> {
           ),
           Expanded(
             child: ListView.builder(
-              itemCount: AppString.list.length,
+              itemCount: AppString1.list1.length,
               itemBuilder: (context, index) {
                 return GestureDetector(
                   onTap: () => Navigator.push(context,
@@ -65,14 +65,14 @@ class _DrawerState extends State<Drawer1> {
                   child: ListTile(
                     leading: CircleAvatar(
                       backgroundImage:
-                      AssetImage("${AppString.list[index]['image']}"),
+                      AssetImage(AppString1.list1[index]['image']),
                       radius: 20,
                     ),
                     title: Text(
-                      "${AppString.list[index]['title']}",
+                      "${AppString1.list1[index]['title'].toString()}",
                     ),
                     subtitle: Text(
-                      AppString.list[index]['subTitle'].toString(),
+                      AppString1.list1[index]['subTitle'].toString(),
                     ),
                     trailing: const Icon(
                       Icons.arrow_forward_ios_sharp,

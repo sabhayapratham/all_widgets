@@ -23,15 +23,13 @@ class _Dropdown_menuState extends State<Dropdown_menu> {
               value: dropdownValue,
               elevation: 2,
               style: const TextStyle(color: Colors.black),
-              underline: Container(
-                height: 2,
-                color: Colors.black,
-              ),
+              // underline: Container(
+              //   height: 2,
+              //   color: Colors.black,
+              // ),
               onChanged: (String? value) {
-                // This is called when the user selects an item.
                 setState(() {
                   dropdownValue = value!;
-                  print("value:: $value");
                 });
               },
               items: list.map<DropdownMenuItem<String>>((String value) {

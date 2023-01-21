@@ -1,5 +1,5 @@
 class AppString1{
-  static List<Map<String,String>> list1 = [
+  static List<Map<dynamic,dynamic>> list1 = [
     {
       "image" : "asset/image/image_info.jpg",
       "title" : "Title1",

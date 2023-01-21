@@ -25,7 +25,7 @@ class _SharedPreferenceDemoState extends State<SharedPreferenceDemo> {
               onPressed: () async {
                 // Obtain shared preferences.
                 final prefs = await SharedPreferences.getInstance();
-                prefs.setString("name", "Sabhaya Pratham");
+                prefs.setString("name", "Pratham Sabhaya");
               },
               child: const Text("Set Data"),
             ),
@@ -46,5 +46,3 @@ class _SharedPreferenceDemoState extends State<SharedPreferenceDemo> {
     );
   }
 }
-
-
